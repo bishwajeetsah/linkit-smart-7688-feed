@@ -36,7 +36,7 @@ In the Debian system, open the *Terminal* application and type the following com
 4. Add the LinkIt Smart 7688 feed:
     
     ```
-    $ echo src-git linkit https://github.com/Kenzu/linkit-smart-7688-feed.git >> feeds.conf
+    $ echo src-git linkit https://github.com/bishwajeetsah/linkit-smart-7688-feed.git >> feeds.conf
     ```
 5. Update the feed information of all available packages for building the firmware:
     

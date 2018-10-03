@@ -12,17 +12,22 @@ define Package/mtk-linkit
 	TITLE:=LinkIt Smart board support package
 	DEPENDS:=@TARGET_ramips_mt76x8_DEVICE_LinkIt7688 \
 		+gdbserver +curl +strace +coreutils \
-		+avahi-nodbus-daemon +mjpg-streamer +blockd \
-		+uhttpd +rpcd +git +git-http +samba36-server \
-		+python +python-pyserial +python-pip +hidapi \
-		+yunbridge \
-		+luci +luci-theme-openwrt +luci-app-mjpg-streamer +luci-app-samba +luci-lib-json \
-		+cgi-io +avrdude +spi-tools +uboot-envtools \
-		+kmod-fs-vfat +kmod-i2c-core \
+		+blockd \
+		+git +git-http +samba36-server \
+		+uboot-envtools \
+		+kmod-fs-vfat +kmod-usb-storage \
 		+kmod-nls-base +kmod-nls-cp437 +kmod-nls-iso8859-1 \
 		+kmod-nls-iso8859-15 +kmod-nls-iso8859-2 +kmod-nls-utf8 \
-		+kmod-sdhci-mt7620 +kmod-usb-storage \
-		+tcpdump-mini +@KERNEL_DEVMEM
+		+@KERNEL_DEVMEM
+		#+cgi-io +rpcd
+		#+kmod-sdhci-mt7620 
+		#+uhttpd 
+		#+luci +luci-theme-openwrt +luci-app-samba +luci-lib-json
+		#+avrdude +spi-tools +yunbridge
+		#+luci-app-mjpg-streamer +kmod-i2c-core
+		#+python +python-pyserial +python-pip +hidapi
+		#+avahi-nodbus-daemon +mjpg-streamer
+		#+tcpdump-mini
 		#+kmod-video-core
 		#+kmod-sound-core +madplay-alsa +alsa-utils
 		#+mtk-linkit-webui
